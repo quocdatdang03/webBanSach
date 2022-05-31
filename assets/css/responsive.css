@@ -1,0 +1,330 @@
+/* mobile */
+@media (max-width : 740px) {
+    .grid {
+        padding : 0 10px;
+    }
+
+    /*=================== header ==================*/
+    #header {
+        position : relative;
+    }
+
+    .header__content.fixed {
+        padding : 0 10px;
+    }
+
+    .header__content.fixed .header__content-logo img {
+        width : 100px;
+        height : 100px;
+    }
+
+    .header__content {
+        position : relative;
+        display : flex;
+        align-items : center;
+        justify-content : space-between;
+    }
+
+    .header__content-logo img {
+        width : 130px;
+        height : 130px;
+    }
+
+    #header::after {
+        content : "";
+        display : block;
+        position : absolute;
+        width : 100%;
+        height : 100px;
+        top : 58%;
+        transform : translateY(-50%);
+        background-color : var(--bg-color);
+        z-index : -1;
+    }
+
+    .header__content-search {
+        display : none;
+    }
+
+    .header__content-list {
+        display : none;
+    }
+
+    .header__content-list-menu {
+        display : block;
+    }
+
+    .header__menu {
+        width : 90%;
+    }
+
+    /* nút btn search on mobile */
+    .header__content-btn-search {
+        display : block;
+    }
+
+    /* =====header__category ======*/
+    .header__category-list {
+        position : absolute;
+        flex-direction : column;
+        align-items : unset;
+        width : 70%;
+        background-color : var(--bg-color);
+        opacity : 0;
+        visibility : hidden;
+        transform-origin : 100% 0;
+        transform : scaleY(0);
+        transition : all ease 0.3s;
+        box-shadow : 5px 5px 10px 0px rgba(0,0,0,0.3);
+    }
+
+    /* CSS ẩn hiện headerCategoryList */
+    .header__category.open .header__category-list {
+        visibility : visible;
+        opacity : 1;
+        transform : scaleY(1);
+    }
+
+    .header__category-item:not(:first-child) {
+        border-top : 1px solid #528ce7;
+    }
+
+    .header__category-box {
+        display : none;
+    }
+
+    .header__category-btn {
+        display : block;
+    }
+    /* =====End header__category ======*/
+    /* ===================end header ==================== */
+
+    /* =================== content ====================== */
+    /* ======= slider ====== */
+    .slider__item-main {
+        height : 250px;
+    }
+    .slider__item-img img {
+        height : 250px;
+    }
+    /* ======== End slider ====== */
+    /* =======product=========== */
+    /* product__book */
+    .product__book:hover {
+        transform : unset;
+        box-shadow : unset;
+    }
+
+    .product__book-img {
+        height : auto;
+    }
+
+    /* product__modal */
+    .product__modal {
+        width : 90%;
+    }
+
+    .product__content-img {
+        width : 150px;
+        height : 150px;
+    }
+
+     /* product__sale */
+     .product__sale-row {
+        padding-left : 8px;
+    }
+
+    .product__sale-category-list {
+        display : flex;
+        flex-wrap : wrap;
+    }
+
+    .product__sale-category-item {
+        background-color : #fefefe;
+        color : #333;
+    }
+
+    /* page */
+    .page__item {
+        padding : 5px 10px;
+        margin : 0 3px;
+    }
+
+     /* productModal */
+     .productModal {
+        width : 90%;
+    }
+
+    .productModal__btn {
+        width : 200px;
+        font-size : 14px;
+    }
+
+    .productModal__item img {
+        width : 150px;
+        height : 200px;
+    }
+
+    .productModal__content h1 {
+        font-size : 15px;
+    }
+    .productModal__content p {
+        font-size : 12px;
+    }
+    /* =======End product=========== */
+    /* =================== End content ====================== */
+    
+}
+
+/* Tablet */
+@media (min-width : 740px) and (max-width : 1023px) {
+    .grid {
+        padding : 0 10px;
+    }
+
+    /*=================== header ==================*/
+    .header__content {
+        
+    }
+
+    .header__content.fixed {
+        padding : 0 10px;
+    }
+
+    .header__content-search {
+        margin-left : 20px;
+    }
+
+    .header__content-list {
+        display : none;
+    }
+
+    .header__content-list-menu {
+        display : block;
+        color : var(--bg-color);
+    }
+
+    /* header__category */
+    .header__category {
+        position : relative;
+    }
+
+    .header__category-row {
+    }
+
+    .header__category-list {
+       position : absolute;
+       flex-direction : column;
+       align-items : unset;
+       width : 600px;
+       background-color : var(--bg-color);
+       opacity : 0;
+       visibility : hidden;
+       transform-origin : 100% 0;
+        transform : scaleY(0);
+        transition : all ease 0.3s;
+        box-shadow : 5px 5px 10px 0px rgba(0,0,0,0.3);
+    }
+
+    /* CSS ẩn hiện headerCategoryList */
+    .header__category.open .header__category-list {
+        visibility : visible;
+        opacity : 1;
+        transform : scaleY(1);
+    }
+
+    .header__category-item:not(:first-child) {
+        border-top : 1px solid #528ce7;
+    }
+
+    .header__category-box {
+        display : none;
+    }
+
+    .header__category-btn {
+        display : block;
+    }
+
+   
+    /* ===================end header ==================== */
+
+    /* =================== content ====================== */
+    /* ======= slider ====== */
+    .slider__item-img img {
+        height : 300px;
+    }
+
+    .slider__item-main {
+        height : 300px;
+    }
+    /* ======== End slider ====== */
+
+     /*======Product========== */
+    /* product__book */
+    .product__book:hover {
+        transform : unset;
+        box-shadow : unset;
+    }
+
+    .product__book-img {
+        height : auto;
+    }
+
+    /* product__sale */
+    .product__sale-row {
+        padding-left : 16px;
+    }
+
+    .product__sale-category-list {
+        display : flex;
+        flex-wrap : wrap;
+    }
+    /* productModal */
+    .productModal {
+        width : 700px;
+    }
+    /*===== End product====== */
+    /* =================== End content ====================== */
+    
+}
+
+/* > PC Low */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    /*=================== header ==================*/
+    .header__content-search {
+        margin-left : 50px;
+    }
+    /* ===================end header ==================== */
+
+    /*=================== content ==================*/
+
+    /*===== slider====== */
+    .slider__item-main {
+        height : 324px;
+    }
+
+    /*===== End slider====== */
+
+    /*======Product====== */
+    /* product__book */
+    .product__book-img {
+        height : 210px;
+    }
+
+    /* product__book-VPP & Dung cu hoc sinh */
+    .product__book-img.VPP {
+        height : 140px;
+    }
+
+    /* product__sale */
+    .product__sale-img {
+        height : 150px;
+        width : 150px;
+    }
+    
+    .product__sale-content {
+        padding : 5px;
+    }
+    /*===== End product====== */
+    /*=================== End content ================*/
+}
